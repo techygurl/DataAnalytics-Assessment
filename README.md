@@ -103,7 +103,7 @@ Estimate **CLV** using average transaction value and user tenure.
 
 ### 3. **NULL Values transaction dates**
 - **Issue:** Some rows had missing transaction dates.
-- **Cause:** Data Fields like last_returns_date, last_charge_date, etc., were NULL.
+- **Cause:** Data Fields like last_returns_date, last_charge_date, etc., were have a lot of NULLS.
 - **Fix:** Used fallback columns like `COALESCE(last_returns_date, '1900-01-01')` 
 
 ---
