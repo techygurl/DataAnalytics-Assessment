@@ -97,9 +97,15 @@ Estimate **CLV** using average transaction value and user tenure.
 - **Fix:** I used my SQL workbench instead & Optimized joins and filtered early with `amount > 0` or `status = 'successful'`.
 
 ### 2. **NULL Values in Name Column**
-- **Issue:** `u.name` returned many NULLs.
+- **Issue:** returned many NULLs.
 - **Cause:** Data in `name` field was missing or improperly populated.
-- **Fix:** Used fallback columns like `first_name` + `last_name` or email .
+- **Fix:** Used customer id mainly .
+
+### 2. **NULL Values transaction dates **
+- **Issue:** Some rows had missing transaction dates.
+- **Cause:** Data Fields like last_returns_date, last_charge_date, etc., were NULL.
+- **Fix:** Used fallback columns like `COALESCE(last_returns_date, '1900-01-01')` 
+
 ---
 
 ##  Prerequisites
