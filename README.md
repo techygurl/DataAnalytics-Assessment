@@ -1,4 +1,4 @@
-# SQL Data Analysis Queries for Customer Accounts
+# SQL Data Analysis Queries for DataAnalytics-Assessment
 
 This repository contains a collection of SQL queries designed for analyzing customer savings and investment behavior using tables such as `users_customuser`, `plans_plan`, and `savings_savingsaccount`, `withdrawals_withdrawal `
 
