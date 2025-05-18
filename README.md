@@ -4,7 +4,7 @@ This repository contains a collection of SQL queries designed for analyzing cust
 
 ---
 
-## 📁 Table Structure References
+## Table Structure References
 
 - **users_customuser**: customer demographic and contact information
 - **plans_plan**: records of plans created by customers
